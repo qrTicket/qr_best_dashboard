@@ -1,0 +1,65 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Update Profile</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a [routerLink]="['/pto/ptodashboard']">Home</a></li>
+              <li class="breadcrumb-item active">Update Profile</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+  
+    <hr>
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+              <form>
+                            
+              </form>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="operatorname">Name</label>
+                  <input type="text" class="form-control" id="operatorname" placeholder="Enter Name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="opratorid">Operator Id</label>
+                  <input type="text" class="form-control" id="opratorid" placeholder="Enter Operator Id" disabled ><!--[value]="operatorId"-->
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="">Operator Code</label>
+                  <input type="text" class="form-control" id="opratorid" placeholder="Enter Operator Code" disabled>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="">Email</label>
+                  <input type="text" class="form-control" id="opratorid" placeholder="Enter Email Address" >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="">Contact</label>
+                  <input type="text" class="form-control" id="opratorid" placeholder="Enter Contact Number" >
+                </div>
+              </div>
+              
+            </div>
+            <div class="row">
+              <button type="submit" class="btn btn-lg btn-sm col-sm-3 btn-sbmit ml-3">Update</button>
+            </div>
+        </div>
+    </section>
+  </div>
+  

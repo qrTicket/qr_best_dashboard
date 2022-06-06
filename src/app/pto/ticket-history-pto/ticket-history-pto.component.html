@@ -1,0 +1,178 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Ticket History</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a [routerLink]="['/admin/requester-list']">Home</a></li>
+              <li class="breadcrumb-item active">Booked ticket History</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <hr>
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+          <!----------------------------Search Section-Start-------------------------->
+          <section class="search_content">
+            <div class="row">
+              <div class="col-md-12">
+                <!-- /.box -->
+                <form action="" >
+                  <div class="search_box">
+                    <div class="col-md-12">
+                      <div class="serach" data-toggle="collapse" data-target="#search_message" style="display: none;">
+                        <input type="text" placeholder="Search.." >
+                        <!-- <button type="submit" class="search_align"><i class="fa fa-search"></i></button> -->
+                        <div class="search_align"><i class="fa fa-search"></i></div>
+                      </div>
+                      <!-- <div id="search_user" class="collapse"> -->
+                      <div id="search_message" class="">
+                        <div class="row">
+                          <div class="col-xs-6 col-sm-4">
+                            <p>Route</p>
+                            <select name="route_id" id="route_id" class="form-control" >
+                              <option value="">Select Route</option>
+                            </select>
+                          </div>
+                          <div class="col-xs-6 col-sm-4">
+                            <p>Source</p>
+                            <select name="cat_id" id="cat_id" class="form-control" >
+                              <option value="">Select Source</option>
+                            </select>
+                          </div>
+    
+                          <div class="col-xs-6 col-sm-4">
+                            <p>Destination</p>
+                            <select name="cat_id" id="cat_id" class="form-control" >
+                              <option value="">Select Destination</option>
+                            </select>
+                          </div>
+                          
+                          
+                        </div>
+
+                        <div class="row second">
+
+                          <div class="col-xs-6 col-sm-4">
+                            <p>Requester</p>
+                            <select name="req_id" id="req_id" class="form-control" >
+                              <option value="">Select Requester</option>
+                            </select>
+                          </div>
+
+                          <div class="col-xs-6 col-sm-2">
+                            <p>Date From</p>
+                            <input class="form-control" placeholder="yyyy-mm-dd"
+                                     name="date_from" ngbDatepicker #df="ngbDatepicker" (click)="df.toggle()">
+                            <!-- <div class="input-group">
+                              <input class="form-control" placeholder="yyyy-mm-dd"
+                                     name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" calendar>
+                              <div class="input-group-append">
+                                <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+                              </div>
+                            </div> -->
+                          </div>
+
+                          <div class="col-xs-6 col-sm-2">
+                            <p>Date To </p>
+                            <input class="form-control" placeholder="yyyy-mm-dd"
+                                     name="date_to"  ngbDatepicker #dto="ngbDatepicker" (click)="dto.toggle()">
+                          </div>
+                        </div>
+                        
+    
+                        <div class="row">
+                          <div class="col-md-9"></div>
+                          <div class="col-md-3">
+                            <!-- <input type="hidden" name="what" value="what" /> -->
+                            <input type="reset" value="Clear Search" class="btn button button_align" />
+                            <input type="submit" value="Search" class="btn button button_align"  />
+                          </div>
+                          <!-- </div> -->
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <!-- /.box -->
+              </div>
+            <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </section>
+          <!----------------------------Search Section-END-------------------------->
+
+          <div class="row">
+              <!-- left column -->
+              <div class="col-md-12">
+                  <!-- /.card-header -->
+                  <div class="card-body p-0 datatable-wraper table-responsive">
+                      <table class="table" id="dataTable" datatable="" dt-options="dtOptions" dt-columns="dtColumns">
+                          <thead class="bg-info">
+                              <tr>
+                                <th style="width: 10px">#</th>
+                                <th>Route</th>
+                                <th>From</th>
+                                <th>To</th>
+                                <th>Requester</th>
+                                <th>Qty</th>
+                                <th>Fare</th>
+                                <th>Mobile</th>
+                                <th>Created Date</th>
+                                <th>Journey Date</th>
+                                <th>Valid Till</th>
+                                <th>Transaction Id</th>
+                                  
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>1.</td>
+                                  <td>WADALA BUS DEPOT TO VASHI NAKA (CHEMBUR)</td>
+                                  <td>AMIRA APARTMENTS</td>
+                                  <td>ASMITA JYOTI</td>
+                                  <td>TravelMozo (Mobile)</td>
+                                  <td>1</td>
+                                  <td>&#8377;50</td>
+                                  <td>9716625377</td>
+                                  <td>10/05/2022 02:30:43</td>
+                                  <td>10/05/2022 15-29-37</td>
+                                  <td>10/05/2022 11:29 PM</td>
+                                  <td>CDACMO20220</td>
+                                  
+                              </tr>
+                              <tr>
+                                  <td>2.</td>
+                                  <td>WADALA BUS DEPOT TO J.MEHTA MARG (NAPEAN SEA ROAD)</td>
+                                  <td>ADARSH NAGAR (JOGESHWARI-W)</td>
+                                  <td>D.N.NAGAR, BARFIWALA VIDYALAYA</td>
+                                  <td>Paytm (Mobile)</td>
+                                  <td>2</td>
+                                  <td>&#8377;50</td>
+                                  <td>9716625377</td>
+                                  <td>10/05/2022 02:30:43</td>
+                                  <td>10/05/2022 15-29-37</td>
+                                  <td>10/05/2022 11:29 PM</td>
+                                  <td>CDACMO202205</td>
+                                  
+                              </tr>
+                              
+                              
+                          </tbody>
+                      </table>
+                  </div>
+                  
+              </div>    
+          </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,60 @@
+<div class="row small-box-wrapper">
+    <div class="col-lg-4 col-sm-6">
+        <div class="circle-tile">
+            <a [routerLink]="['/pto/assigned-requester-list']">
+                <div class="circle-tile-heading dark-blue">
+                    <i class="fa fa-users fa-fw fa-3x"></i>
+                </div>
+            </a>
+            <div class="circle-tile-content dark-blue">
+                <div class="circle-tile-description text-faded">
+                    Total Requester
+                </div>
+                <div class="circle-tile-number text-faded">
+                    5
+                    <span id="sparklineA"></span>
+                </div>
+                <a [routerLink]="['/pto/assigned-requester-list']" class="circle-tile-footer">More Info <i class="fa fa-chevron-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+        <div class="circle-tile">
+            <a [routerLink]="['/pto/ticket-history-pto']">
+                <div class="circle-tile-heading green">
+                    <i class="fa fa-money fa-fw fa-3x"></i>
+                </div>
+            </a>
+            <div class="circle-tile-content green">
+                <div class="circle-tile-description text-faded">
+                    Today's Total Transaction
+                </div>
+                <div class="circle-tile-number text-faded">
+                    &#x20b9;32,384
+                </div>
+                <a [routerLink]="['/pto/ticket-history-pto']" class="circle-tile-footer">More Info <i class="fa fa-chevron-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4 col-sm-6">
+        <div class="circle-tile">
+            <a [routerLink]="['/pto/ticket-history-pto']">
+                <div class="circle-tile-heading blue">
+                    <i class="fa fa-ticket fa-fw fa-3x"></i>
+                </div>
+            </a>
+            <div class="circle-tile-content blue">
+                <div class="circle-tile-description text-faded">
+                    Today's Generated Ticket
+                </div>
+                <div class="circle-tile-number text-faded">
+                    240
+                    <span id="sparklineC"></span>
+                </div>
+                <a [routerLink]="['/pto/ticket-history-pto']" class="circle-tile-footer">More Info <i class="fa fa-chevron-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+    
+</div>
